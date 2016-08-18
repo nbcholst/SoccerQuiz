@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nickcholst.soccerquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the quiz you wish to take"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/soccer_quizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/quiz_container"
+            >
+
+            <TextView
+                android:id="@+id/soccer_quizes_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soccer Quizes"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:background="@drawable/quiz_container"
+                android:layout_alignParentTop="true"
+                />
+
+            <Button
+                android:id="@+id/soccer_team_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:layout_below="@id/soccer_quizes_label"
+                android:background="@drawable/quiz_selector_active"
+                android:text="Soccer Teams"/>
+
+            <Button
+                android:id="@+id/soccer_player_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:layout_below="@id/soccer_team_quiz"
+                android:background="@drawable/quiz_selector_inactive"
+                android:text="Soccer Players (Coming Soon)"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/football_quizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quiz_container"
+            >
+
+        <TextView
+            android:id="@+id/football_quizes_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Football Quizes"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@drawable/quiz_container"
+            android:layout_alignParentTop="true"
+            />
+
+            <Button
+                android:id="@+id/football_team_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:layout_below="@id/football_quizes_label"
+                android:background="@drawable/quiz_selector_inactive"
+                android:text="Coming Soon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
